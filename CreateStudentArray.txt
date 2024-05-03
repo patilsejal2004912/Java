@@ -1,0 +1,62 @@
+import java.util.Scanner;
+public class StudentArrayExample
+{
+    public static class Student
+    {
+        public String name;
+        public String dob;
+        public int rollno;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number of Student=");
+        int n=sc.nextInt();
+        Student[] studentsArr =new Student[n];
+
+        for(int i=0; i<n; i++)
+        {
+            System.out.println("****"+(i+1)+"****");
+            Student s = new Student();
+            System.out.print("Enter Student Roll Number=");
+            s.rollno=sc.nextInt();
+            System.out.print("Enter Student name=");
+            s.name=sc.next();
+            System.out.print("Enter Student DOB=");
+            s.dob=sc.next();
+
+            studentsArr[i]=s;
+        }
+        System.out.println("\n**********Show all Students*******");
+        for(Student s:studentsArr)
+        {
+            System.out.println("Roll Number  ="+s.rollno);
+            System.out.println("Student Name ="+s.name);
+            System.out.println("Student DOB  ="+s.dob);
+            System.out.println("");
+        }
+    }
+}
+
+Output:-
+Enter number of Student=2
+****1****
+Enter Student Roll Number=1
+Enter Student name=vaishu
+Enter Student DOB=26102004
+****2****
+Enter Student Roll Number=2
+Enter Student name=riyaa
+Enter Student DOB=16012004
+
+**********Show all Students*******
+Roll Number  =1
+Student Name =vaishu
+Student DOB  =26102004
+
+Roll Number  =2
+Student Name =riyaa
+Student DOB  =16012004
+
+
+Process finished with exit code 0

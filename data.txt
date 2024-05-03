@@ -1,0 +1,5 @@
+bubblesort
+selecton
+queue
+stack
+linear search

@@ -1,0 +1,45 @@
+Practical No:8
+
+package command.line.apps;
+public class WrapperClass {
+    public static void main(String[] args) {
+
+        Integer intObj = Integer.valueOf(42);
+        Double doubleObj = Double.valueOf(3.14);
+        Character charObj = Character.valueOf('A');
+        Boolean boolObj = Boolean.valueOf(true);
+
+        Integer autoboxedInt = 100;
+
+        int unboxedInt = autoboxedInt;
+
+        System.out.println("Integer Object: " + intObj);
+        System.out.println("Double Object: " + doubleObj);
+        System.out.println("Character Object: " + charObj);
+        System.out.println("Boolean Object: " + boolObj);
+        System.out.println("Autoboxed Integer: " + autoboxedInt);
+        System.out.println("Unboxed Integer: " + unboxedInt);
+
+        String numStr = "123";
+        int parsedInt = Integer.parseInt(numStr);
+        System.out.println("Parsed Integer: " + parsedInt);
+        String intStr = Integer.toString(456);
+        System.out.println("Converted Integer to String: " + intStr);
+    }
+}
+
+Output:-
+C:\Users\vaish\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=61268:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\vaish\IdeaProjects\vaish\out\production\vaish command.line.apps.WrapperClass
+Integer Object: 42
+Double Object: 3.14
+Character Object: A
+Boolean Object: true
+Autoboxed Integer: 100
+Unboxed Integer: 100
+Parsed Integer: 123
+Converted Integer to String: 456
+
+Process finished with exit code 0
+
+
+

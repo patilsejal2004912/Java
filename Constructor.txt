@@ -1,0 +1,67 @@
+public class Constructor
+{
+    public String name;
+    public String mobile;
+    public String email;
+    public int age;
+
+    public Constructor() 
+    {
+        this.name="";
+        this.mobile="";
+        this.email="";
+        this.age=0;
+
+    }
+    public Constructor(String name,String mobile,String email,int age)	//Parameterize constructor
+    {
+        this.name=name;
+        this.mobile=mobile;
+        this.email=email;
+        this.age=age;
+    }
+    public Constructor(Constructor c)     {
+        this.name=c.name;
+        this.mobile=c.mobile;
+        this.email=c.email;
+        this.age=c.age;
+    }
+
+    public void show()
+    {
+        System.out.println("\nName="+this.name);
+        System.out.println("Mobile="+this.mobile);
+        System.out.println("Email="+this.email);
+        System.out.println("Age="+this.age);
+    }
+    public static void main(String[] args)
+    {
+        Constructor c = new Constructor(); 
+        c.show();
+        Constructor c1 = new Constructor("Vaishnavi","5647283453","vaishnavi@gmail.com",20); //using Parameter constructor
+        c1.show();
+
+        Constructor c2 = new Constructor(c1); 
+        c2.show();
+    }
+}
+
+Output:-
+C:\Users\vaish\.jdks\openjdk-21.0.1\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=53762:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\vaish\IdeaProjects\vaish\out\production\vaish Constructor
+
+Name=
+Mobile=
+Email=
+Age=0
+
+Name=Vaishnavi
+Mobile=5647283453
+Email=vaishnavi@gmail.com
+Age=20
+
+Name=Vaishnavi
+Mobile=5647283453
+Email=vaishnavi@gmail.com
+Age=20
+
+Process finished with exit code 0

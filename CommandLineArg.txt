@@ -1,0 +1,25 @@
+public class Command
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Below are arguments pass to program");
+		for(String a:args)
+		{
+			System.out.println(a);
+
+		}
+	}
+}
+
+
+Output:-
+
+Microsoft Windows [Version 10.0.22621.1702]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\vaish\Desktop\vaishu>javac Command.java
+
+C:\Users\vaish\Desktop\vaishu>java Command
+Below are arguments pass to program
+
+C:\Users\vaish\Desktop\vaishu>
